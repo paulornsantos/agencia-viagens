@@ -26,6 +26,8 @@ loadImages( images, containerItems );
 
 let items = document.querySelectorAll('.item');
 
+console.log(items);
+
 const previous = () => {
     containerItems.appendChild(items[0]);
     items = document.querySelectorAll('.item');

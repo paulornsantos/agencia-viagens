@@ -183,6 +183,16 @@ header img {
 
 /*Destino*/
 
+.title-destino{
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.span-destino {
+    font-size: 3.5rem;
+    font-weight: 300;
+    border-bottom: 1px solid #1aa3ff;
+}
 .container-slide{
     display: flex;
     justify-content: space-between;
@@ -235,4 +245,103 @@ header img {
     border-radius: 10px;
     cursor: pointer;
     transition: all 1s;
+}
+
+/* Destinos Card */
+.container-cards{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 70%;
+    background-color: #F6F9FF;
+    align-items: center;
+    color: #434343;
+}
+
+.cards {
+    display: flex;
+    padding: 32px;
+}
+
+.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-width: 256px;
+    margin-left: 32px;
+}
+
+.cards section.card:first-child{
+    margin-left: 0;
+}
+
+
+
+.cards section.card .icon{
+    width: 84px;
+    height: 84px;
+}
+
+.cards section.card img {
+  width: 100%;
+}
+
+.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+
+    
+.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    opacity: 0.8;
+    
+}
+
+.cards section.card button:hover{
+    opacity: 1;
+}
+
+.btn-card{
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.cards section.card {
+    box-shadow: 20px 20px 50px -30px #2980b9;
+}
+
+@media screen and (max-wdth: 720px){
+    .cards{
+        flex-direction: column;
+    }
+
+    .cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    .cards section.card:last-child{
+        margin-bottom: 0;
+    }
 }
