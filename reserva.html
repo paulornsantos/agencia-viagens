@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/e423cd83f9.js" crossorigin="anonymous"></script>
+
+    <title>Destinos | Reservas PS</title>
+</head>
+<body class="body">
+
+    <!-- Cabeçalho -->
+    <header>
+        <a href="index.html"><img src="imagens/logo.png" alt="Reservas PS"></a>
+        <nav class="nav-header">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="destino.html">Destinos</a></li>
+            <li><a href="#">Contato</a></li>
+        </nav>
+    </header>
+
+    <!-- Formulario reservas -->
+
+    <h2 class="title-destino title-reserva"><span class="span-destino">Faça sua reserva</span></h2>
+   
+    <div class="container-reserva">
+        <form class="form-reserva">
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="campo">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="campo">
+                <label>Qual destino escolhido ?</label>
+                <select id="reservas">
+                    <option selected disable value="">Selecione</option>
+                    <option>São Paulo</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Santa Catarina</option>
+                    <option>New York</option>
+                    <option>Dubai</option>
+                    <option>Alaska</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-card btn-reserva" id="reserva"><a href="index.html">Reservas</a></button>
+        </form>
+    </div>
+    
+    
+
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/rederecode/?hl=en" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="https://twitter.com/rederecode" target="blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://pt-br.facebook.com/rederecode/" target="blank"><i class="fab fa-facebook"></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Serviços</a>
+            </li>
+            <li>
+                <a href="#">Sobre</a>
+            </li>
+            <li>
+                <a href="#">Termos</a>
+            </li>
+            <li>
+                <a href="#">Politica de Privacidade</a>
+            </li>
+        </ul>
+        <p class="copyright">Paulo Santos @ 2021</p>
+    </footer>
+    <script src="./js/reserva.js"></script>
+</body>
+</html>
