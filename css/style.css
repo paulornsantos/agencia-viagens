@@ -398,3 +398,81 @@ input, select, textarea {
 .btn-reserva:hover{
     opacity: 1;
 }
+
+/* Contato */
+
+.container-conosco{
+    background-color: #ccc;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.form{
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.2rem;
+}
+
+.form label, 
+.form input,
+.form textarea,
+.form button {
+    display: block;
+    width: 100%;
+    color: #1aa3ff;
+}
+
+.form label{
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea{
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea {
+    min-height: 13rem;
+    resize: vertical;
+}
+
+ 
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+    outline: none;
+    border-color: #1aa3ff;
+    box-shadow: 0 0 0 3px #2980B9;
+}
+
+.form button {
+    display: block;
+    padding: 1rem;
+    background: #1aa3ff;
+    color: white;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form button:hover,
+.form button:focus{
+    outline: none;
+    background: #6DD5FA;
+
+}
